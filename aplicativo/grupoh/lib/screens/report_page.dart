@@ -37,7 +37,7 @@ class _ReportPageState extends State<ReportPage> {
               ),
               Container(
                 width: double.infinity,
-                height: 300,
+                height: 500,
                 child: ListView.separated(
                   itemCount: pagList.length,
                   itemBuilder: (BuildContext context, int index) {
