@@ -1,0 +1,63 @@
+swagger: "2.0"
+info:
+  description: Swagger file
+  version: "1.0.0"
+  title: SAP & CIENCI Open API REST Pagamentos
+consumes:
+  - application/json
+produces:
+  - application/json
+
+basePath: /api
+
+paths:
+  /payment:
+    post:
+      operationId: domain.payment.add_new
+      tags:
+        - Payment
+      summary: Adiciona contas a pagar na fila de pagamentos
+      description: Adiciona na fila de pagamentos
+      parameters:
+        - name: payment_data
+          in: body
+          description: Pagamento a ser processado
+          required: True
+          schema:
+            type: array
+            items:
+              required:
+                - CNPJ_DEB
+                - CNPJ_FAV
+                - COD_BANCO
+                - AGENCIA
+                - CONTA
+                - EMPRESA
+                - TIPO_PAGAMENTO
+                - DATA_VENC
+                - MOEDA
+                - VALOR
+              properties:
+                CNPJ_DEB:
+                  type: string
+                CNPJ_FAV:
+                  type: string
+                COD_BANCO:
+                  type: integer
+                AGENCIA:
+                  type: integer
+                CONTA:
+                  type: integer
+                EMPRESA:
+                  type: string
+                TIPO_PAGAMENTO:
+                  type: integer
+                DATA_VENC:
+                  type: string
+                MOEDA:
+                  type: string
+                VALOR:
+                  type: number
+      responses:
+        201:
+          description: Sucesso ao criar
