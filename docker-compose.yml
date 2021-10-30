@@ -1,0 +1,44 @@
+version: '3'
+services:
+  web:
+    build: web
+    ports:
+     - "5000:5000"
+    volumes:
+     - .:/code
+    networks:
+      - network
+  mongo:
+    image: mongo:latest
+    volumes:
+      - data:/data
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: mongoadmin
+      MONGO_INITDB_ROOT_PASSWORD: mongoadmin
+    deploy:
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 3
+        window: 120s
+    ports:
+        - "27017:27017"
+    networks:
+      - network
+  rabbitmq:
+    image: 'rabbitmq:3.6-management-alpine'
+    ports:
+      - '5672:5672'
+      - '15672:15672'
+    networks:
+      - network
+  consumer:
+    build: consumer
+    volumes:
+     - .:/consumer
+    networks:
+      - network
+volumes:
+  data:
+networks:
+  network: {}
