@@ -45,4 +45,4 @@ Em seguida execute o comando abaixo no terminal (é necessário ter o [NodeJS](h
 
 # Arquitetura
 
-![Microservice Architecture](https://github.com/fase-5-grupo-h/challenge-sap-cienci/blob/main/backend/static/architecture.jpg?raw=true)
+![Microservice Architecture](https://github.com/fase-5-grupo-h/challenge-sap-cienci/blob/main/web/static/architecture.jpg?raw=true)
