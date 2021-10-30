@@ -56,7 +56,13 @@ class _MassPaymentState extends State<MassPayment> {
               GenericListViewItem(
                 header: pagList[index].categoria,
                 value: pagList[index].valor,
-                data: format.format(DateTime.now()),
+                data: format.format(
+                  DateTime(
+                    DateTime.now().year,
+                    DateTime.now().month,
+                    (DateTime.now().day + index),
+                  ),
+                ),
               ),
             ],
           ),
