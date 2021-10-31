@@ -7,7 +7,8 @@ class QuickListView extends StatelessWidget {
     QuickViewItem('Pagar', Icons.payments_outlined, '/pagamento'),
     QuickViewItem('Extrato', Icons.receipt_outlined, '/extrato'),
     QuickViewItem('Relatório', Icons.assessment_outlined, '/relatorio'),
-    QuickViewItem('Proces-\nsamentos', Icons.hourglass_bottom_outlined, '/'),
+    QuickViewItem(
+        'Proces-\nsamentos', Icons.hourglass_bottom_outlined, '/processamento'),
     //QuickViewItem('Cartão\nVirtual', Icons.credit_card_outlined),
     QuickViewItem('Agenda-\nmentos', Icons.query_builder_outlined, '/'),
     //QuickViewItem('Pagar3', Icons.payments_outlined),

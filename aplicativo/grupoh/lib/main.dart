@@ -3,6 +3,7 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:grupoh/screens/extract.dart';
 import 'package:grupoh/screens/home_page.dart';
 import 'package:grupoh/screens/payment_page.dart';
+import 'package:grupoh/screens/process_page.dart';
 import 'package:grupoh/screens/report_page.dart';
 
 void main() {
@@ -25,6 +26,7 @@ class MyApp extends StatelessWidget {
         '/extrato': (context) => Extract(),
         '/pagamento': (context) => PaymentPage(),
         '/relatorio': (context) => ReportPage(),
+        '/processamento': (context) => ProcessmentPage(),
       },
     );
   }

@@ -32,7 +32,7 @@ final kInactiveElevatedButtonStyle = ElevatedButton.styleFrom(
   ),
 );
 
-final List<Payment> pagList = [
+final List<Payment> pagListSimple = [
   Payment(categoria: 'Imposto', valor: 4690.90),
   Payment(categoria: 'Fornecedor', valor: 5842.70),
   Payment(categoria: 'Imposto', valor: 985.75),
