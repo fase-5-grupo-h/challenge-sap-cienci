@@ -20,6 +20,7 @@ O microserviço criado nesse projeto faz parte do Challenge SAP & CIENCI do MBA 
 | ./aplicativo | Aplicativo mobile desenvolvido utilizando Flutter |
 | ./consumer | Microserviço desenvolvido em Python para processar items da fila de pagamento |
 | ./web | API e Microserviço desenvolvido em Python para receber pedidos de pagamento e enviar para a fila além de processar e armazenar os pagamentos |
+| .env | Arquivo de configuração de features flags |
 | docker-compose.yml | Arquivo de configuração do Docker com API, RabbitMQ, Consumer e MongoDB |
 
 
