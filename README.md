@@ -15,7 +15,7 @@ O microserviço criado nesse projeto faz parte do Challenge SAP & CIENCI do MBA 
 
 # Documentação online
 
-[https://app.swaggerhub.com/apis/](https://app.swaggerhub.com/apis/)
+[https://app.swaggerhub.com/apis/Student-Grupo-H/sap-cienci_open_api_rest_pagamentos/1.0.0](https://app.swaggerhub.com/apis/Student-Grupo-H/sap-cienci_open_api_rest_pagamentos/1.0.0)
 
 # Como executar (passo a passo)
 
