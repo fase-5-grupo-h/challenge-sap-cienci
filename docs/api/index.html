@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="main.css">
+    <meta charset="UTF-8">
+    <title>SAP &amp; CIENCI Open API REST Pagamentos</title>
+                                                         </head>
+<body>
+<div class="container">
+    <h1>SAP &amp; CIENCI Open API REST Pagamentos</h1>
+    <p class="sw-info">
+        Base URL: <span class="sw-info-basePath">/api</span>,
+        Version: <span class="sw-info-version">1.0.0</span>
+    </p>
+    <p><p>Swagger file</p>
+    </p>
+    
+        <div id="sw-default-consumes" class="sw-default-value">
+            <span class="sw-default-value-header">Default request content-types:</span>
+            application/json
+        </div>
+        <div id="sw-default-produces" class="sw-default-value">
+            <span class="sw-default-value-header">Default response content-types:</span>
+            application/json
+        </div>
+    
+    <div id="sw-schemes" class="sw-default-value">
+        <span class="sw-default-value-header">Schemes:</span>
+        
+    </div>
+    
+        <h2 id="swagger--summary-no-tags">Summary</h2>
+        <table class="table table-bordered table-condensed swagger--summary">
+            <thead>
+            <tr>
+                <th>Path</th>
+                <th>Operation</th>
+                <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                            <td class="swagger--summary-path" rowspan="1">
+                                <a href="#path--payment">/payment</a>
+                            </td>
+                        <td>
+                            <a href="#operation--payment-post">POST</a>
+                        </td>
+                        <td>
+                            <p>Adiciona contas a pagar na fila de pagamentos</p>
+        
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
+    
+    
+    
+    <h2>Paths</h2>
+    
+        
+        <span id="path--payment"></span>
+            <div id="operation--payment-post" class="swagger--panel-operation-post panel">
+                <div class="panel-heading">
+                    <div class="operation-summary">Adiciona contas a pagar na fila de pagamentos</div>
+                    <h3 class="panel-title"><span class="operation-name">POST</span> <strong>/payment</strong></h3>
+                        Tags:
+                            <a href="#tag-Payment">Payment</a>
+                </div>
+                <div class="panel-body">
+                    <section class="sw-operation-description">
+                        <p>Adiciona na fila de pagamentos</p>
+            
+                    </section>
+            
+                        
+                            <section class="sw-request-body">
+                                
+                                    <p><a href="#sw-default-consumes">Uses default content-types: </a>
+                                    <span class="label label-default">application/json</span> 
+                                    </p>
+                                                <div class="row">
+                                            <div class="col-md-6">
+                                                <p><p>Pagamento a ser processado</p>
+                        </p>
+                                            </div>
+                                            <div class="col-md-6 sw-request-model">
+                            <div  class="panel panel-definition">
+                                <div class="panel-body">
+                                        
+                                                        <section class="json-schema-array-items">
+                                                            
+                                                            <span class="json-property-type">object</span>
+                                                            <span class="json-property-range" title="Value limits"></span>
+                                                            
+                                                            <div class="json-inner-schema">
+                                                                
+                                                                    <section class="json-schema-properties">
+                                                                        <dl>
+                                                                                <dt data-property-name="CNPJ_DEB">
+                                                                                    <span class="json-property-name">CNPJ_DEB:</span>
+                                                                                    
+                                                                                    <span class="json-property-type">string</span>
+                                                                                    <span class="json-property-range" title="Value limits"></span>
+                                                                                    
+                                                                                        <span class="json-property-required"></span>
+                                                                                </dt>
+                                                                                <dd>
+                                                                                    
+                                                                                    <div class="json-inner-schema">
+                                                                                        
+                                                                                    </div>
+                                                                                </dd>
+                                                                                <dt data-property-name="CNPJ_FAV">
+                                                                                    <span class="json-property-name">CNPJ_FAV:</span>
+                                                                                    
+                                                                                    <span class="json-property-type">string</span>
+                                                                                    <span class="json-property-range" title="Value limits"></span>
+                                                                                    
+                                                                                        <span class="json-property-required"></span>
+                                                                                </dt>
+                                                                                <dd>
+                                                                                    
+                                                                                    <div class="json-inner-schema">
+                                                                                        
+                                                                                    </div>
+                                                                                </dd>
+                                                                                <dt data-property-name="COD_BANCO">
+                                                                                    <span class="json-property-name">COD_BANCO:</span>
+                                                                                    
+                                                                                    <span class="json-property-type">integer</span>
+                                                                                    <span class="json-property-range" title="Value limits"></span>
+                                                                                    
+                                                                                        <span class="json-property-required"></span>
+                                                                                </dt>
+                                                                                <dd>
+                                                                                    
+                                                                                    <div class="json-inner-schema">
+                                                                                        
+                                                                                    </div>
+                                                                                </dd>
+                                                                                <dt data-property-name="AGENCIA">
+                                                                                    <span class="json-property-name">AGENCIA:</span>
+                                                                                    
+                                                                                    <span class="json-property-type">integer</span>
+                                                                                    <span class="json-property-range" title="Value limits"></span>
+                                                                                    
+                                                                                        <span class="json-property-required"></span>
+                                                                                </dt>
+                                                                                <dd>
+                                                                                    
+                                                                                    <div class="json-inner-schema">
+                                                                                        
+                                                                                    </div>
+                                                                                </dd>
+                                                                                <dt data-property-name="CONTA">
+                                                                                    <span class="json-property-name">CONTA:</span>
+                                                                                    
+                                                                                    <span class="json-property-type">integer</span>
+                                                                                    <span class="json-property-range" title="Value limits"></span>
+                                                                                    
+                                                                                        <span class="json-property-required"></span>
+                                                                                </dt>
+                                                                                <dd>
+                                                                                    
+                                                                                    <div class="json-inner-schema">
+                                                                                        
+                                                                                    </div>
+                                                                                </dd>
+                                                                                <dt data-property-name="EMPRESA">
+                                                                                    <span class="json-property-name">EMPRESA:</span>
+                                                                                    
+                                                                                    <span class="json-property-type">string</span>
+                                                                                    <span class="json-property-range" title="Value limits"></span>
+                                                                                    
+                                                                                        <span class="json-property-required"></span>
+                                                                                </dt>
+                                                                                <dd>
+                                                                                    
+                                                                                    <div class="json-inner-schema">
+                                                                                        
+                                                                                    </div>
+                                                                                </dd>
+                                                                                <dt data-property-name="TIPO_PAGAMENTO">
+                                                                                    <span class="json-property-name">TIPO_PAGAMENTO:</span>
+                                                                                    
+                                                                                    <span class="json-property-type">integer</span>
+                                                                                    <span class="json-property-range" title="Value limits"></span>
+                                                                                    
+                                                                                        <span class="json-property-required"></span>
+                                                                                </dt>
+                                                                                <dd>
+                                                                                    
+                                                                                    <div class="json-inner-schema">
+                                                                                        
+                                                                                    </div>
+                                                                                </dd>
+                                                                                <dt data-property-name="DATA_VENC">
+                                                                                    <span class="json-property-name">DATA_VENC:</span>
+                                                                                    
+                                                                                    <span class="json-property-type">string</span>
+                                                                                    <span class="json-property-range" title="Value limits"></span>
+                                                                                    
+                                                                                        <span class="json-property-required"></span>
+                                                                                </dt>
+                                                                                <dd>
+                                                                                    
+                                                                                    <div class="json-inner-schema">
+                                                                                        
+                                                                                    </div>
+                                                                                </dd>
+                                                                                <dt data-property-name="MOEDA">
+                                                                                    <span class="json-property-name">MOEDA:</span>
+                                                                                    
+                                                                                    <span class="json-property-type">string</span>
+                                                                                    <span class="json-property-range" title="Value limits"></span>
+                                                                                    
+                                                                                        <span class="json-property-required"></span>
+                                                                                </dt>
+                                                                                <dd>
+                                                                                    
+                                                                                    <div class="json-inner-schema">
+                                                                                        
+                                                                                    </div>
+                                                                                </dd>
+                                                                                <dt data-property-name="VALOR">
+                                                                                    <span class="json-property-name">VALOR:</span>
+                                                                                    
+                                                                                    <span class="json-property-type">number</span>
+                                                                                    <span class="json-property-range" title="Value limits"></span>
+                                                                                    
+                                                                                        <span class="json-property-required"></span>
+                                                                                </dt>
+                                                                                <dd>
+                                                                                    
+                                                                                    <div class="json-inner-schema">
+                                                                                        
+                                                                                    </div>
+                                                                                </dd>
+                                                                        </dl>
+                                                                    </section>
+                                                            </div>
+                                                        </section>    </div>
+                            </div></div>
+                                        </div>
+                            </section>        
+                    
+                        <section class="sw-responses">
+                                <p><a href="#sw-default-produces">Uses default content-types: </a>
+                                    <span class="label label-default">application/json</span> 
+                                </p>
+                            
+                            <dl>
+                                    <dt class="sw-response-201">
+                                        201 Created
+                                    
+                                    </dt>
+                                    <dd class="sw-response-201">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <p>Sucesso ao criar</p>
+                                            
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                
+                                                <div class="col-md-6 sw-response-model">
+                                            </div>
+                                            
+                                            </div>                </dd>
+                            </dl>
+                        </section>
+                </div>
+            </div>
+    
+     
+    
+                       
+    
+</div>
+
+</body>
+</html>
