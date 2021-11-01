@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:grupoh/utilities/aux_variables.dart';
 import 'package:intl/intl.dart';
 import 'package:grupoh/model/payment.dart';
 import 'generic_widgets/generic_list_view_item.dart';
@@ -36,38 +37,58 @@ class _MassPaymentState extends State<MassPayment> {
 
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
-      itemCount: pagList.length,
-      itemBuilder: (BuildContext context, int index) {
-        return Card(
-          color: pagList[index].selected ? Colors.white38 : Colors.white10,
-          child: Row(
-            children: [
-              Checkbox(
-                activeColor: Colors.black,
-                value: pagList[index].selected,
-                onChanged: (bool? newValue) {
-                  setState(() {
-                    pagList[index].selected = !pagList[index].selected;
-                    selectedItem(index);
-                  });
-                },
-              ),
-              GenericListViewItem(
-                header: pagList[index].categoria,
-                value: pagList[index].valor,
-                data: format.format(
-                  DateTime(
-                    DateTime.now().year,
-                    DateTime.now().month,
-                    (DateTime.now().day + index),
-                  ),
-                ),
-              ),
-            ],
+    return Container(
+      child: Column(
+        children: [
+          ElevatedButton(
+            onPressed: () {},
+            child: const Text(
+              'Pagar',
+              style: kInactiveElevatedButtonTextStyle,
+            ),
+            style: kInactiveElevatedButtonStyle,
           ),
-        );
-      },
+          const SizedBox(
+            width: 25.0,
+          ),
+          Expanded(
+            child: ListView.builder(
+              itemCount: pagList.length,
+              itemBuilder: (BuildContext context, int index) {
+                return Card(
+                  color:
+                      pagList[index].selected ? Colors.white38 : Colors.white10,
+                  child: Row(
+                    children: [
+                      Checkbox(
+                        activeColor: Colors.black,
+                        value: pagList[index].selected,
+                        onChanged: (bool? newValue) {
+                          setState(() {
+                            pagList[index].selected = !pagList[index].selected;
+                            selectedItem(index);
+                          });
+                        },
+                      ),
+                      GenericListViewItem(
+                        header: pagList[index].categoria,
+                        value: pagList[index].valor,
+                        data: format.format(
+                          DateTime(
+                            DateTime.now().year,
+                            DateTime.now().month,
+                            (DateTime.now().day + index),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                );
+              },
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
