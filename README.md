@@ -13,6 +13,16 @@ Nesse ambiente também há um banco de dados utilizando NoSQL (MongoDB) e a docu
 
 O microserviço criado nesse projeto faz parte do Challenge SAP & CIENCI do MBA em Engenharia de Software da FIAP criado para suportar um processo de pagamento automático integrado ao SAP para substituir o método existente conhecido como VAN (Value Added Network), ou Rede de Valor agregado, é uma rede privada que permite a troca de informações entre empresas de forma segura, funcionando como uma central de comunicação. Integrada ou não a um ERP, ela substitui o uso do Internet Banking permitindo que pagamentos e cobranças sejam feitos.
 
+# Estrutura de diretório e arquivos principais
+
+| Diretório | Descrição |
+| ----------- | ----------- |
+| ./aplicativo | Aplicativo mobile desenvolvido utilizando Flutter |
+| ./consumer | Microserviço desenvolvido em Python para processar items da fila de pagamento |
+| ./web | API e Microserviço desenvolvido em Python para receber pedidos de pagamento e enviar para a fila além de processar e armazenar os pagamentos |
+| docker-compose.yml | Arquivo de configuração do Docker com API, RabbitMQ, Consumer e MongoDB |
+
+
 # Documentação online
 
 [https://app.swaggerhub.com/apis/Student-Grupo-H/sap-cienci_open_api_rest_pagamentos/1.0.0](https://app.swaggerhub.com/apis/Student-Grupo-H/sap-cienci_open_api_rest_pagamentos/1.0.0)
