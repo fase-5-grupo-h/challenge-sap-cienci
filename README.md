@@ -46,3 +46,7 @@ Em seguida execute o comando abaixo no terminal (é necessário ter o [NodeJS](h
 # Arquitetura
 
 ![Microservice Architecture](https://github.com/fase-5-grupo-h/challenge-sap-cienci/blob/main/web/static/architecture.jpg?raw=true)
+
+# Pitch
+
+https://user-images.githubusercontent.com/241153/139726181-2f88b81f-9be9-4d89-b459-8694a4d6f1f9.mp4
